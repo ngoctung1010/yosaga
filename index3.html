@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet"  href="assets/plugins/lightslider/lightslider.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <style type="text/css"></style>
@@ -226,7 +227,7 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2 pd-top">
                         <div class="clearfix"></div>
                         <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
@@ -329,6 +330,60 @@
             </div>
         </div>
     </div>
+    <div class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Video full Width popup</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, laborum, quo aperiam temporibus atque ipsum autem velit reprehenderit sequi non itaque sed vel eveniet! Non, laudantium sed quaerat vitae expedita!</p>
+                    <a href="">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pd-0">
+                     <div class="col-md-4">
+                        <h3 class="changer-h3">
+                            <span>
+                                Portfolio
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="changer-p">
+                            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, <br> because it is pain, but because occasionavantage from it?Nor again is there anyone <br> who loves or pursues or desires to obtain pain of itself, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width100 item">
+            <div id="content-slider" class="content-slider">
+                <div class="width33">
+                    <a href="">
+                        <img src="assets/img/yogay.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="width33">
+                    <a href="">
+                        <img src="assets/img/yogay.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="width33">
+                    <a href="">
+                        <img src="assets/img/yogay1.jpg" class="img-responsive">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="hours">
         <div class="container">
             <div class="row">
@@ -565,6 +620,7 @@
     <script src="assets/js/index.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/plugins/bxslider/jquery.bxslider.js"></script>
+    <script src="assets/plugins/lightslider/lightslider.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             var $search = $('#search');
@@ -593,6 +649,11 @@
                 maxSlides: 1,
                 speed: 800,
                 adaptiveHeight:true,
+            });
+            $("#content-slider").lightSlider({
+                loop:true,
+                enableDrag:true,
+                item:3,
             });
         });
     </script>
